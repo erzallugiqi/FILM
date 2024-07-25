@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="/final/logo2.jpg" class="logo">
+              <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div id="services"></div>
+              </ul>
+            </nav>
+<div class="header-text">
+    <p>Student on Digital school</p>
+    <h1>Hello, I'm <span>Erza Llugiqi</span><br> from Lipjan</h1>
+</div>
+        </div>
+       
+    </div>
+    <!-- ----------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./erzapic.jpg" class="resized-image" alt="erza pic">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I'm called Erza,I'm from a city on Kosovo called Lipjan.
+                    I am 16 i turn 17 by the start of september,I got one year left of hightschool,I am willing to start computer science faculties thats why i am on Digital School so I can improve myself and be ready for facultie.
+                    As a hobby I play volleyball on Lipjan's team called "Ulpiana" I started some years ago and im still doing great on it.
+                    
+                </p>
+                <div class="tab-titles">
+  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+ <p class="tab-links" onclick="opentab('experience')">Experiece</p>
+<p class="tab-links"onclick="opentab('Education')">Education</p>
+
+
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+<ul><br><br>
+    <li><span>HTML</span></li>
+    <li><span>CSS</span></li>
+    <li><span>JAVASCRIPT</span></li>
+    <li><span>WORD</span></li>
+    <li><span>POWERPOINT</span></li>
+    <li><span>EXCEL</span></li>
+
+</ul>
+</div>
+                <div class="tab-contents" id="experience">
+                    <ul><br>
+                        <li><span>NONE YET...</span></li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul><br><br>
+<li><span>2012-2014</span><br>"Dy Deshmoret"</li>
+<li><span>2014-2022</span><br>"Vellezrit Frasheri</li>
+<li><span>2014-2021</span><br>The cambridge school of Kosovo</li>
+<li><span>2022-2024(Current)</span><br>Gjimnazi"Ulpiana"</li>
+<li><span>2023-2024(Current)</span><br>Digital School</li>
+</ul></div>
+ </div>
+ </div> 
+</div>
+</div>
+<!--------services-------- -->
+<div id="Services">
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Website design is a process of designing and implementing the website which includes the analysis, design, development and maintenance</p>
+           <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Web create</h2>
+                <p>Firstly, we have to type the Html code in any text editor or open the existing Html file in the text editor in which we want to create the login form.</p>
+           <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App design</h2>
+                <p>To design an app firstly you can use figma,its an easy app where you can improve your designing.</p>
+           <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sun-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/final/html.png">
+                <div class="layer">
+                    <h3>HTML</h3>
+                    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</p>
+                   
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="/final/images.png">
+                <div class="layer">
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML</p>
+                    
+                   
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="/final/java work.png">
+                <div class="layer">
+                    <h3>JS</h3>
+                    <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages </p>
+                    
+                   
+                </div>
+             
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Email: erzallugiqi07@gmail.com</p>
+                <p>Number: 045495865</p>
+               
+            </div>
+            <div class="contact-right">
+                <form>
+                  
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+
+                </form>
+            </div>
+        </div>
+<div class="copyright">
+    <p>This is my first portfolio ever done!  Hope you like it.</p>
+</div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+</script>
+
+</body>
+</html>
